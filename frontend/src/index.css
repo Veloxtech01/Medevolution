@@ -181,6 +181,96 @@ nav {
   color: var(--color-blue);
 }
 
+/* Mobile nav toggle — hidden on desktop, shown by the 980px media query below */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-ink);
+  cursor: pointer;
+  padding: 6px;
+  line-height: 0;
+}
+
+/* Mobile nav panel — hidden on desktop; toggled by Header's menuOpen state */
+.mobile-nav {
+  overflow: hidden;
+  background: var(--color-paper);
+  border-bottom: 1px solid var(--color-line);
+}
+.mobile-nav-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 32px 24px;
+  gap: 4px;
+}
+.mobile-nav-inner > a {
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray);
+  border-bottom: 1px solid var(--color-line);
+}
+.mobile-nav-item {
+  border-bottom: 1px solid var(--color-line);
+}
+.mobile-nav-accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray);
+  font-family: inherit;
+  cursor: pointer;
+}
+.chevron {
+  transition: transform 0.2s;
+}
+.chevron-open {
+  transform: rotate(180deg);
+}
+.mobile-nav-accordion {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 14px;
+}
+.mobile-nav-division b {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--color-blue);
+  margin-bottom: 8px;
+}
+.mobile-nav-division a {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 13.5px;
+  color: var(--color-ink);
+  padding: 6px 0;
+}
+.mobile-nav-division a i {
+  font-style: normal;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  color: #9AA0B8;
+  min-width: 20px;
+}
+.mobile-nav-cta {
+  margin-top: 12px;
+  text-align: center;
+  border-bottom: none !important;
+}
+
 /* Hero */
 .hero {
   border-bottom: 1px solid var(--color-line);
@@ -783,7 +873,19 @@ footer {
   .nav-links {
     display: none;
   }
+  .nav-cta {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
   section {
     padding: 60px 0;
+  }
+}
+
+@media (min-width: 981px) {
+  .mobile-nav {
+    display: none;
   }
 }
