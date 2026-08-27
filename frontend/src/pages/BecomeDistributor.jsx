@@ -11,7 +11,6 @@ function BecomeDistributor() {
   return (
     <>
       <PageHeader
-        refLine="DOC. MEDEV-CP-2026 · SEC. 05"
         eyebrow="Distribution Network · Present on Every Continent"
         title="Distribute a brand built on documentation."
         description="MedEvolution systems reach hospitals and diagnostic centres through a network of authorized distributors spanning North America, South America, Europe, Asia, Africa, and Oceania."

@@ -27,7 +27,7 @@ function DistributorForm() {
     <section className="ledger-sec" style={{ background: '#fff' }}>
       <div className="wrap">
         <Reveal as="div" className="sec-head">
-          <div className="eyebrow">Partnership Inquiry — Form MEDEV-DIST-01</div>
+          <div className="eyebrow">Partnership Inquiry</div>
           <h2>Request the distributor partnership pack.</h2>
           <p>
             Territory availability, training programs, and commercial terms for qualified medical equipment

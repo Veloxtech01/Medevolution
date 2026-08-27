@@ -9,7 +9,7 @@ function ProductLedger() {
     <section className="ledger-sec" id="portfolio">
       <div className="wrap">
         <Reveal as="div" className="sec-head">
-          <div className="eyebrow">Product Portfolio · MEDEV-PLA-2026 · REV 1.0</div>
+          <div className="eyebrow">Product Portfolio</div>
           <h2>The product ledger.</h2>
           <p>
             Fourteen controlled product lines in canonical order. Line numbers and codes are permanent identifiers

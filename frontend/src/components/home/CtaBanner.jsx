@@ -8,7 +8,7 @@ function CtaBanner() {
     <Reveal as="div" className="cta">
       <div className="wrap cta-inner">
         <div>
-          <div className="mono-note">PARTNERSHIP INQUIRY — FORM MEDEV-DIST-01</div>
+          <div className="mono-note">PARTNERSHIP INQUIRY</div>
           <h2>Distribute a brand built on documentation.</h2>
           <p>
             Territory availability, training programs, and commercial terms for qualified medical equipment
