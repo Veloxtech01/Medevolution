@@ -9,6 +9,7 @@ function GlobalPresence() {
   return (
     <>
       <PageHeader
+        bg="hero-wash"
         eyebrow="Global Presence"
         title="Five locations. Four regions. One standard."
         description="From engineering and corporate leadership in the United States, to manufacturing in China, to regional market and support offices across Europe and Asia — MedEvolution operates a single, connected quality standard worldwide."

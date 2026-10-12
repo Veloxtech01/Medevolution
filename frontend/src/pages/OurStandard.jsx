@@ -14,6 +14,7 @@ function OurStandard() {
       <PageHeader
         eyebrow="Our Standard · Quality & Compliance"
         title="Built to a written standard."
+        bg="hero-wash"
         description="We are transparent about our model: engineering and design control from Cambridge, production at our Shenzhen facility, and nothing ships until it passes our gate."
       />
       <CompanyStory />

@@ -5,12 +5,13 @@ import { fadeUp, fadeUpReduced } from '../../lib/motion'
 // intro copy. Reuses the homepage hero's blueprint styling in a single
 // column (no hero-grid/draw-box), so every inner page opens the same way.
 // Fades/slides in once on mount (above the fold, so not scroll-triggered).
-// Props: refLine (string), eyebrow (string), title (node), description (node).
-function PageHeader({ refLine, eyebrow, title, description }) {
+// Props: refLine (string), eyebrow (string), title (node), description (node),
+// bg (string) — background utility class, defaults to the blueprint grid.
+function PageHeader({ refLine, eyebrow, title, description, bg = 'grid-bg' }) {
   const reduced = useReducedMotion()
   return (
     <motion.header
-      className="hero grid-bg"
+      className={`hero ${bg}`}
       initial="hidden"
       animate="visible"
       variants={reduced ? fadeUpReduced : fadeUp}

@@ -24,6 +24,7 @@ function Products() {
   return (
     <>
       <PageHeader
+        bg="hero-wash"
         eyebrow="Product Portfolio · 14 Lines · 4 Divisions"
         title="The complete portfolio."
         description="Fourteen controlled product lines in canonical order. Line numbers and codes are permanent identifiers used across catalogs, price lists, and this website."

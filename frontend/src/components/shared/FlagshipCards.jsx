@@ -1,5 +1,7 @@
 import { RevealGroup, RevealItem } from '../motion/Reveal'
 import { hoverLift } from '../../lib/motion'
+import breastVisionTomo from '../../assets/breastvision-tomo.jpg'
+import mobileDr from '../../assets/mobile-dr.jpg'
 
 // The two flagship platforms (BreastVision TOMO, Mobile DR), shared between
 // the homepage feature section and the Products hub's Line 02 entry so the
@@ -20,8 +22,8 @@ function FlagshipCards() {
         </div>
         <div className="spec-visual">
           <img
-            src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=80"
-            alt="Screening environment"
+            src={breastVisionTomo}
+            alt="BreastVision TOMO 3D mammography system"
             loading="lazy"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
@@ -63,8 +65,8 @@ function FlagshipCards() {
         </div>
         <div className="spec-visual">
           <img
-            src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1200&q=80"
-            alt="Ward environment"
+            src={mobileDr}
+            alt="Mobile DR motorized digital radiography system"
             loading="lazy"
             onError={(e) => {
               e.currentTarget.style.display = 'none'

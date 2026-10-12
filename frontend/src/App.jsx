@@ -15,10 +15,11 @@ import Maintenance from './pages/Maintenance'
 const isUnderMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === 'true'
 
 // Central route table (per project convention: all routes live here, no
-// second <Routes> tree elsewhere). Every route nests under the shared
-// Layout, which renders Header/Footer once and crossfades between pages —
-// except in maintenance mode, where every path resolves to the standalone
-// Maintenance page instead (no Header/Footer, nothing else is reachable).
+// second <Routes> tree elsewhere). Every route — the homepage included —
+// nests under the shared Layout, which renders Header/Footer once and
+// crossfades between pages. In maintenance mode every path resolves to the
+// standalone Maintenance page instead (no Header/Footer, nothing else is
+// reachable).
 const router = createBrowserRouter(
   isUnderMaintenance
     ? [{ path: '*', element: <Maintenance /> }]
@@ -26,7 +27,7 @@ const router = createBrowserRouter(
         {
           element: <Layout />,
           children: [
-            { path: '/', element: <Home /> },
+            { index: true, element: <Home /> },
             { path: '/products', element: <Products /> },
             { path: '/our-standard', element: <OurStandard /> },
             { path: '/global-presence', element: <GlobalPresence /> },

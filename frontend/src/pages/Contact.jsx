@@ -10,6 +10,7 @@ function Contact() {
   return (
     <>
       <PageHeader
+        bg="hero-wash"
         eyebrow="Global Contact Directory"
         title="Reach MedEvolution."
         description="Corporate leadership and engineering sit in Cambridge, MA. Regional offices in China, Germany, South Korea, and India handle manufacturing, market access, and clinical support closer to you."
